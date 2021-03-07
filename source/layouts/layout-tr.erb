@@ -11,10 +11,9 @@ page_subtitle = "#{page_subtitle} • #{current_page.metadata[:page][:reading_ti
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>vb YAZILIM<%= page_subtitle %></title>
-    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
 
-    <meta name="description" content="We are software development, training and consultancy company. We provide highly skilled Django application development services.">
-    <meta name="keywords" content="training,git,python,ruby,bash,golang,javascript,reactjs,vuejs,applescript,django,flask,sinatra,ror,rails,ruby on rails,postgresql,deployment,gentoo,redis" />
+    <meta name="description" content="Butik yazılım geliştirme, eğitim ve danışmanlık hizmetleri veren vb YAZILIM, 2013 yılından beri sektörde hizmet vermektedir. Python, Django, Golang, Ruby, JavaScript gibi modern yazılım dilleri ve kütüphaneleri konusunda çok deneyimlidir.">
+    <meta name="keywords" content="eğitim,git,python,ruby,bash,golang,javascript,reactjs,vuejs,applescript,django,flask,sinatra,ror,rails,ruby on rails,postgresql,mongodb,gentoo,redis,grpc,node" />
     <meta name="p:domain_verify" content="37faca05c6c17ec39d217c55756a7242"/>
 
     <% if development? %>
@@ -39,18 +38,17 @@ page_subtitle = "#{page_subtitle} • #{current_page.metadata[:page][:reading_ti
 <body>
     <% if development? %><p class="debug"></p><% end %>
 
-    <%= partial 'partials/header' %>
+    <%= partial 'partials/header-tr' %>
     <%= yield %>
 
     <div id="ga-notice" class="is-hidden">
         <div class="notification is-size-7-touch has-text-centered is-radiusless">
             <button class="delete mr-1"></button>
-            We are using Google Analytics on our page to track visit counts and other statistic related datas.
-            We would like to inform you about that...
+            İzin ver...
         </div>
     </div>
 
-    <%= partial 'partials/footer' %>
+    <%= partial 'partials/footer-tr' %>
 
     <% if development? %>
     <%= javascript_include_tag 'fontawesome.5.3.1' %>

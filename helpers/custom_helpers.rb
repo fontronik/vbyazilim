@@ -20,4 +20,8 @@ module CustomHelpers
     
     out.join
   end
+  
+  def is_active(href)
+    ' class="is-active"' if href == current_page.url
+  end
 end
