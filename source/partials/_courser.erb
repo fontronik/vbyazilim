@@ -15,7 +15,8 @@ courses.each_slice(2) do |items|
             div_class = index % 2 == 0 ? 'column is-5-desktop' : 'column is-5-desktop is-offset-2-desktop mt-2-mobile'
             content_tag :div, :class => div_class do
                 content_tag :div, :class => 'content' do
-                    concat partial "partials/training/courses/#{course}"
+                    course_sub_folder = course.split('-').first
+                    concat partial "partials/training/courses/#{course_sub_folder}/#{course}"
                 end
             end
         end
