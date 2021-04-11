@@ -43,23 +43,6 @@ title: Development, Training and Consultancy
                         <strong>JavaScript</strong> backend development for micro-service 
                         architecture approach.
                     </p>
-                    <div id="home-tags" class="mb-1 p-5">
-                    <%
-                    keywords = [
-                        'golang', 'python', 'ruby', 'bash', 'javascript',
-                        'django', 'flask', 'sinatra', 'node',
-                        'vuejs', 'reactjs',
-                        'api', 'micro-service', 'rest', 'grpc',
-                        'docker', 'kubernetes', 'ci/cd',
-                        'training', 'consultancy',
-                    ]
-                    keywords.each do |keyword|
-                        content_tag :span, class: 'tag is-info is-medium' do
-                            concat keyword
-                        end
-                    end
-                    %>
-                    </div>
 
                     <h3>Providing services since <strong>2013</strong></h3>
                     <p class="is-size-5">
@@ -80,6 +63,30 @@ title: Development, Training and Consultancy
                         More information can be found at our 
                         <a class="is-external-link" href="/services/">services</a> page.
                     </p>
+                    
+                    <div class="dev-icons mt-2 is-hidden-mobile">
+                        <%= image_tag "icons/python.svg", class: "svg-icon", alt: "Python development services" %>
+                        <%= image_tag "icons/golang.svg", class: "svg-icon", alt: "Golang development services" %>
+                        <%= image_tag "icons/ruby.svg", class: "svg-icon", alt: "Ruby development services" %>
+                        <%= image_tag "icons/sinatra.svg", class: "svg-icon", alt: "Sinatra / ruby development services" %>
+                        <%= image_tag "icons/django.svg", class: "svg-icon", alt: "Django / python development services" %>
+                        <%= image_tag "icons/flask.svg", class: "svg-icon", alt: "Flask / python development services" %>
+                        <%= image_tag "icons/rubygems.svg", class: "svg-icon", alt: "Rubygem / ruby package development services" %>
+                        <%= image_tag "icons/npm.svg", class: "svg-icon", alt: "NPM package/library javascript development services" %>
+                        <%= image_tag "icons/node.svg", class: "svg-icon", alt: "Node / javascript development services" %>
+                        <%= image_tag "icons/bash.svg", class: "svg-icon", alt: "Bash scripting services" %>
+                        <%= image_tag "icons/docker.svg", class: "svg-icon", alt: "Docker containerization services" %>
+                        <%= image_tag "icons/vue.svg", class: "svg-icon", alt: "VueJS javascript frontend/UI services" %>
+                        <%= image_tag "icons/react.svg", class: "svg-icon", alt: "ReactJS javascript frontend/UI services" %>
+                        <%= image_tag "icons/mongodb.svg", class: "svg-icon", alt: "MongoDB database services" %>
+                        <%= image_tag "icons/postgresql.svg", class: "svg-icon", alt: "Postgresql database services" %>
+                        <%= image_tag "icons/mysql.svg", class: "svg-icon", alt: "MySQL database services" %>
+                        <%= image_tag "icons/redis.svg", class: "svg-icon", alt: "Redis database services" %>
+                        <%= image_tag "icons/rabbitmq.svg", class: "svg-icon", alt: "RabbitMQ message queue" %>
+                        <%= image_tag "icons/kafka.svg", class: "svg-icon", alt: "Kafka message queue" %>
+                        <%= image_tag "icons/kong.svg", class: "svg-icon", alt: "Kong API Gateway services" %>
+                        <%= image_tag "icons/ubuntu.svg", class: "svg-icon", alt: "Ubuntu / Linux operating system provisioning" %>
+                    </div>
 
                 </div>
             </div>
@@ -152,19 +159,16 @@ title: Development, Training and Consultancy
                     <h1 class="title has-text-color-vb">Past Organizations</h1>
                 </div>
                 <table class="table vb-conferences">
-                    <thead>
-                        <tr><th>Event</th><th>Location</th></tr>
-                    </thead>
-                    <tr><td><strong>Kod.io</strong> 2013, Developer Conference</td><td>İstanbul</td></tr>
-                    <tr><td><strong>Kod.io</strong> 2014, Developer Conference</td><td>Linz</td></tr>
-                    <tr><td><strong>Codefront.io</strong> 2014, Frontend Development Conference</td><td>Linz</td></tr>
-                    <tr><td><strong>Failconf.io</strong> 2014, Startups</td><td>İstanbul</td></tr>
-                    <tr><td><strong>Hack-ing.io</strong> 2014, ING Bank Hackathon</td><td>İstanbul</td></tr>
-                    <tr><td><strong>jsist</strong> 2014, JavaScript Conference</td><td>İstanbul</td></tr>
-                    <tr><td><strong>ING Bank Hackathon</strong> 2015</td><td>İstanbul</td></tr>
-                    <tr><td><strong>Getir Hackathon</strong> 2015</td><td>İstanbul</td></tr>
-                    <tr><td><strong>ING Bank Hackathon</strong> 2016</td><td>İstanbul</td></tr>
-                    <tr><td><strong>Cracking the Interview</strong> 2018, with Bilgem Çakır</td><td>İstanbul</td></tr>
+                    <tr><td><strong>Kod.io 2013</strong>Developer Conference</td><td>İstanbul</td></tr>
+                    <tr><td><strong>Kod.io 2014</strong>Developer Conference</td><td>Linz</td></tr>
+                    <tr><td><strong>Codefront.io 2014</strong>Frontend Development Conference</td><td>Linz</td></tr>
+                    <tr><td><strong>Failconf.io 2014</strong>Startups</td><td>İstanbul</td></tr>
+                    <tr><td><strong>Hack-ing.io 2014</strong>ING Bank Hackathon</td><td>İstanbul</td></tr>
+                    <tr><td><strong>jsist 2014</strong>JavaScript Conference</td><td>İstanbul</td></tr>
+                    <tr><td><strong>ING Bank Hackathon 2015</strong></td><td>İstanbul</td></tr>
+                    <tr><td><strong>Getir Hackathon 2015</strong></td><td>İstanbul</td></tr>
+                    <tr><td><strong>ING Bank Hackathon 2016</strong></td><td>İstanbul</td></tr>
+                    <tr><td><strong>Cracking the Interview 2018</strong>with Bilgem Çakır</td><td>İstanbul</td></tr>
                 </table>
                 
             </div>
